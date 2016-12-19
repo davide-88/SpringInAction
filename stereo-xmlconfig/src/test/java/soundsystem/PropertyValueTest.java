@@ -23,22 +23,22 @@ public class PropertyValueTest {
   @Test
   public void play() {
     player.play();
-    assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n" +
-        "-Track: Sgt. Pepper's Lonely Hearts Club Band\n" +
-        "-Track: With a Little Help from My Friends\n" +
-        "-Track: Lucy in the Sky with Diamonds\n" +
-        "-Track: Getting Better\n" +
-        "-Track: Fixing a Hole\n" +
-        "-Track: She's Leaving Home\n" +
-        "-Track: Being for the Benefit of Mr. Kite!\n" +
-        "-Track: Within You Without You\n" +
-        "-Track: When I'm Sixty-Four\n" +
-        "-Track: Lovely Rita\n" +
-        "-Track: Good Morning Good Morning\n" +
-        "-Track: Sgt. Pepper's Lonely Hearts Club Band (Reprise)\n" +
-        "-Track: A Day in the Life\n",
-        log.getLog());
+    assertEquals(String.format(
+    		"Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles%n" +
+			"-Track: Sgt. Pepper's Lonely Hearts Club Band%n" +
+			"-Track: With a Little Help from My Friends%n" +
+			"-Track: Lucy in the Sky with Diamonds%n" +
+			"-Track: Getting Better%n" +
+			"-Track: Fixing a Hole%n" +
+			"-Track: She's Leaving Home%n" +
+			"-Track: Being for the Benefit of Mr. Kite!%n" +
+			"-Track: Within You Without You%n" +
+			"-Track: When I'm Sixty-Four%n" +
+			"-Track: Lovely Rita%n" +
+			"-Track: Good Morning Good Morning%n" +
+			"-Track: Sgt. Pepper's Lonely Hearts Club Band (Reprise)%n" +
+			"-Track: A Day in the Life%n"),
+    		log.getLog());
   }
 
 }

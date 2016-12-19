@@ -23,9 +23,9 @@ public class PropertyRefTest {
   @Test
   public void play() {
     player.play();
-    assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+    assertEquals(String.format(
+    		"Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles%n"),
+    		log.getLog());
   }
 
 }
