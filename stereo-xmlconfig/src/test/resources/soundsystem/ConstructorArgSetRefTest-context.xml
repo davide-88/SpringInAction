@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="firstSong" class="soundsystem.BlankSong" c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+		c:_1="The Beatles" />
+	<bean id="secondSong" class="soundsystem.BlankSong" c:_0="With a Little Help from My Friends"
+		c:_1="The Beatles" />
+	<bean id="thirdSong" class="soundsystem.BlankSong" c:_0="Lucy in the Sky with Diamonds"
+		c:_1="The Beatles" />
+	<bean id="fourthSong" class="soundsystem.BlankSong" c:_0="Getting Better"
+		c:_1="The Beatles" />
+	<bean id="fifthSong" class="soundsystem.BlankSong" c:_0="Fixing a Hole"
+		c:_1="The Beatles" />
+	<bean id="sixthSong" class="soundsystem.BlankSong" c:_0="She's Leaving Home"
+		c:_1="The Beatles" />
+	<bean id="seventhSong" class="soundsystem.BlankSong" c:_0="Being for the Benefit of Mr. Kite!"
+		c:_1="The Beatles" />
+	<bean id="eighthSong" class="soundsystem.BlankSong" c:_0="Within You Without You"
+		c:_1="The Beatles" />
+	<bean id="ninethSong" class="soundsystem.BlankSong" c:_0="When I'm Sixty-Four"
+		c:_1="The Beatles" />
+	<bean id="tenthSong" class="soundsystem.BlankSong" c:_0="Lovely Rita"
+		c:_1="The Beatles" />
+	<bean id="eleventhSong" class="soundsystem.BlankSong" c:_0="Good Morning Good Morning"
+		c:_1="The Beatles" />
+	<bean id="twelvethSong" class="soundsystem.BlankSong"
+		c:_0="Sgt. Pepper's Lonely Hearts Club Band (Reprise)" c:_1="The Beatles" />
+	<bean id="thirteenthSong" class="soundsystem.BlankSong"
+		c:_0="A Day in the Life" c:_1="The Beatles" />
+
+	<bean id="basket" class="soundsystem.collections.SongsBasket">
+		<constructor-arg>
+			<set>
+				<ref bean="firstSong"/>
+				<ref bean="secondSong"/>
+				<ref bean="thirdSong"/>
+				<ref bean="fourthSong"/>
+				<ref bean="fifthSong"/>
+				<ref bean="sixthSong"/>
+				<ref bean="seventhSong"/>
+				<ref bean="eighthSong"/>
+				<ref bean="ninethSong"/>
+				<ref bean="tenthSong"/>
+				<ref bean="eleventhSong"/>
+				<ref bean="twelvethSong"/>
+				<ref bean="thirteenthSong"/>
+			</set>
+		</constructor-arg>
+	</bean>
+
+</beans>

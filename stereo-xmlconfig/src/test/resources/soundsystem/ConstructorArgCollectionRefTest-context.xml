@@ -28,8 +28,17 @@
 		</constructor-arg>
 	</bean>
 
-	<bean id="cdPlayer" class="soundsystem.CDPlayer">
-		<constructor-arg ref="compactDisc" />
+<!-- 	<bean id="cdPlayer" class="soundsystem.CDPlayer"> -->
+<!-- 		<constructor-arg ref="compactDisc" /> -->
+<!-- 	</bean> -->
+
+	<bean id="beatlesDiscography" class="soundsystem.collections.Discography">
+		<constructor-arg value="The Beatles"/>
+		<constructor-arg>
+			<list>
+				<ref bean="compactDisc"/>
+			</list>
+		</constructor-arg>
 	</bean>
 
 </beans>

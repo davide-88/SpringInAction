@@ -10,22 +10,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import soundsystem.collections.Discography;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
-public class ConstructorArgCollectionTest {
+public class ConstructorArgCollectionRefTest {
 
   @Rule
   public final SystemOutRule log = new SystemOutRule();
 
   @Autowired
-  private MediaPlayer player;
+  private Discography discography;
 
   @Test
   public void play() {
-	  log.enableLog();
-	  player.play();
-		assertEquals(String.format(
-				"Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles%n"
+		log.enableLog();
+		discography.playDiscography();
+		assertEquals(String.format("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles%n"
 				+ "-Track: Sgt. Pepper's Lonely Hearts Club Band%n" 
 				+ "-Track: With a Little Help from My Friends%n"
 				+ "-Track: Lucy in the Sky with Diamonds%n" 
